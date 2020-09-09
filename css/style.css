@@ -1,9 +1,17 @@
+/* css reset */
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
-}
+    overflow-x: hidden;
+} 
+
+/* navbar */
 
 header{
     position: absolute;
@@ -12,8 +20,7 @@ header{
 }
 
 #logo{
-
-    width: 150px;
+    width: 15vh;
 }
 
 .navbar{
@@ -36,17 +43,21 @@ header{
     padding: 5px 15px;
 }
 
+/* navbar-end */
+
+/* head-content */
 
 .banner{
-    position: relative;
-    background-image: url(../imgs/bannerBackground.jpg);
-    min-height: 90vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 250px 0 200px;
 
+    position: relative;
+    background: url(../imgs/bannerBackground.jpg) no-repeat center fixed;
+    background-size: cover;
+    padding: 15vh 0 200px;
+
+}
+
+.banner .container{
+    max-width: 90%;
 }
 
 .banner h2#chTitle{
@@ -64,33 +75,46 @@ header{
     font-weight: 500;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+
 }
 
 .front-page-img img {
     border-radius: 30px;
-    max-width: 70vh;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .banner button{
     margin-top: 10px;
     
 }
-
-.banner button{
-    
-}
-
 /* 
-.jumbotron{
-    
-    
-    height: 90vh;
-    color: white;
-    border-radius: 0px!important;
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+
+ } */
+/*  
+@media all and (min-width: 480px) and (max-width: 767px) { 
+
+    .front-page-img img{
+        width: 30px;
+        border-radius: 30px;
+    }
+
+/* }
+  */
+/* small phone view */
+/* @media all and (max-width: 479px) { 
+
+
+    .front-page-img img{
+        width: 40vh;
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+
 }
-
-.jumbotron .row img{
-    border-radius: 30px;
-    width: 500px;
-
-} */
+ */
+ */

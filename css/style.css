@@ -50,7 +50,8 @@ header{
 .banner{
 
     position: relative;
-    background: url(../imgs/bannerBackground.jpg) no-repeat center fixed;
+    background: url(../imgs/bannerBackground.jpg) no-repeat;
+    background-position: bottom;
     background-size: cover;
     padding: 15vh 0 200px;
 
@@ -89,6 +90,37 @@ header{
     
 }
 
+
+.profile .container{
+
+}
+
+#robinPic{
+
+    clip-path: circle(50% at 50% 50%);
+    width: 30vh;
+}
+
+.profileInfo .Info{
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+#joycePic{
+    clip-path: circle(50% at 50% 50%);
+    width: 30vh;
+}
+
+.classInfo .cInfo{
+list-style-type: none;
+line-height: 2rem;
+}
+
+.classIntro{
+
+    background-image: linear-gradient(to top, #daad86, #fbeec1) ;
+
+}
 @media (max-width: 576px) { 
 
     .banner h2#chTitle{
